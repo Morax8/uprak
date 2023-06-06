@@ -56,7 +56,7 @@
                                                 session_start();
 
                                                 if (isset($_SESSION['username'])) {
-                                                    header("Location: ../index.php");
+                                                    header("Location: Page/index.php");
                                                     exit; // Added exit to prevent further execution
                                                 }
 

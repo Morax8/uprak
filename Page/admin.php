@@ -71,7 +71,7 @@ $siswa = query("SELECT * FROM siswa");
                     <a href="#testimonials-section" class="nav-link">Testimonials</a>
                   </li>
                   <li>
-                    <a href="./index.php" onclick="logout()" class="nav-link">Log Out</a>
+                    <a onclick="logout()" class="nav-link">Log Out</a>
                   </li>
                   <li class="has-children">
                     <a href="#">More Links</a>
@@ -176,7 +176,7 @@ $siswa = query("SELECT * FROM siswa");
         showCancelButton: true,
         confirmButtonText: "Log Out",
       }).then((result) => {
-        location.href = "./index.php";
+        location.href = "../Controller/logout.php";
       });
     }
   </script>
