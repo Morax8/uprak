@@ -41,7 +41,7 @@ $siswa = query("SELECT * FROM siswa");
             <div class="row align-items-center">
                 <div class="col-6 col-xl-2">
                     <h1 class="mb-0 site-logo">
-                        <a href="index.html">Siswa <span class="text-primary"> .</span> </a>
+                        <a onclick="logout()">Siswa <span class="text-primary"> .</span> </a>
                     </h1>
                 </div>
 
@@ -65,6 +65,9 @@ $siswa = query("SELECT * FROM siswa");
                                     </li>
                                     <li>
                                         <a href="#testimonials-section" class="nav-link">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="logout()" class="nav-link">Log Out</a>
                                     </li>
                                     <li class="has-children">
                                         <a href="#">More Links</a>
@@ -139,6 +142,21 @@ $siswa = query("SELECT * FROM siswa");
     <script src="./navbar/js/bootstrap.min.js"></script>
     <script src="./navbar/js/jquery.sticky.js"></script>
     <script src="./navbar/js/main.js"></script>
+    <script>
+        //logout
+        function logout() {
+            event.preventDefault(); // prevent the default anchor behavior
+            Swal.fire({
+                icon: 'warning',
+                type: "warning",
+                title: "Log Out?",
+                showCancelButton: true,
+                confirmButtonText: "Log Out",
+            }).then((result) => {
+                location.href = "../Controller/logout.php";
+            });
+        }
+    </script>
     <!-- table -->
     <!-- <script src="./Table/js/jquery-3.3.1.min.js"></script>
     <script src="./Table/js/popper.min.js"></script>
