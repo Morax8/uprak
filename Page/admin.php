@@ -45,7 +45,7 @@ $siswa = query("SELECT * FROM siswa");
       <div class="row align-items-center">
         <div class="col-6 col-xl-2">
           <h1 class="mb-0 site-logo">
-            <a href="index.html">Siswa <span class="text-primary"> .</span> </a>
+            <a href="#">Siswa <span class="text-primary"> .</span> </a>
           </h1>
         </div>
 
@@ -71,7 +71,7 @@ $siswa = query("SELECT * FROM siswa");
                     <a href="#testimonials-section" class="nav-link">Testimonials</a>
                   </li>
                   <li>
-                    <a href="../index.php" onclick="logout()" class="nav-link">Log Out</a>
+                    <a href="./index.php" onclick="logout()" class="nav-link">Log Out</a>
                   </li>
                   <li class="has-children">
                     <a href="#">More Links</a>
@@ -176,7 +176,7 @@ $siswa = query("SELECT * FROM siswa");
         showCancelButton: true,
         confirmButtonText: "Log Out",
       }).then((result) => {
-        location.href = "../index.php";
+        location.href = "./index.php";
       });
     }
   </script>
