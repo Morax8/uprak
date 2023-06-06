@@ -45,7 +45,7 @@ $siswa = query("SELECT * FROM siswa");
       <div class="row align-items-center">
         <div class="col-6 col-xl-2">
           <h1 class="mb-0 site-logo">
-            <a href="#">Siswa <span class="text-primary"> .</span> </a>
+            <a onclick="logout()">Siswa <span class="text-primary"> .</span> </a>
           </h1>
         </div>
 
@@ -167,6 +167,7 @@ $siswa = query("SELECT * FROM siswa");
   <script src="./Table/js/main.js"></script> -->
 
   <script>
+    //logout
     function logout() {
       event.preventDefault(); // prevent the default anchor behavior
       Swal.fire({
